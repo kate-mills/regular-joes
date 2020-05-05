@@ -9,10 +9,11 @@ import Info from "../components/Home/Info"
 const AboutPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="About" />
       <BackgroundSection
         img={data.img.childImageSharp.fluid}
         title="about us"
+        styleClass="about-background"
       />
       <Info />
     </Layout>
@@ -24,7 +25,7 @@ export const query = graphql`
     img: file(relativePath: { eq: "about-background.jpeg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
