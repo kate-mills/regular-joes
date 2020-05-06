@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Title from "../Globals/Title"
 
 const Info = () => {
@@ -18,11 +18,11 @@ const Info = () => {
               hammock fixie +1 banh mi. Chia pickled knausgaard hoodie, cardigan
               vexillologist etsy XOXO live-edge sustainable.
             </p>
-            <Link to="/about">
+            <AniLink fade to="/about">
               <button className="btn text-uppercase btn-yellow">
                 about page
               </button>
-            </Link>
+            </AniLink>
           </div>
         </div>
       </div>
