@@ -27,7 +27,7 @@ export const query = graphql`
   {
     img: file(relativePath: { eq: "default-background.jpeg" }) {
       childImageSharp {
-        fluid {
+        fluid(toFormat: JPG) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
@@ -43,8 +43,8 @@ export const query = graphql`
           price
           category
           image {
-            fixed(width: 50, height: 50) {
-              ...GatsbyContentfulFixed
+            fixed(width: 50, height: 50, toFormat: JPG) {
+              ...GatsbyContentfulFixed_tracedSVG
             }
           }
         }
