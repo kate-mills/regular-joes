@@ -1,5 +1,5 @@
-import React from "react";
-import Img from "gatsby-image";
+import React from "react"
+import Img from "gatsby-image"
 
 export default function Product({ product }) {
   return (
@@ -15,12 +15,12 @@ export default function Product({ product }) {
             data-item-name={product.title}
             data-item-price={product.price}
             data-item-image={product.image.fluid.src}
-            data-item-url="https://hardcore-coffee.netlify.app/"
+            data-item-url="/"
           >
             add to cart
           </button>
         </div>
       </div>
     </div>
-  );
+  )
 }
