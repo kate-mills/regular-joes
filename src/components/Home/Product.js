@@ -15,7 +15,7 @@ const Product = ({ product: { id, title, price, image } }) => {
             data-item-name={title}
             data-item-price={price}
             data-item-image={image.fluid.src}
-            data-item-url="https://hardcore-coffee.netlify.app/"
+            data-item-url="hardcore-coffee.netlify.app/"
           >
             add to cart
           </button>
